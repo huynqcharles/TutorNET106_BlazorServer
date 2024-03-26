@@ -1,0 +1,23 @@
+﻿@page "/list-products"
+@inherits ListProductsBase
+
+<h3>List Products</h3>
+
+@if (Products != null)
+{
+    <div class="card-group">
+        @foreach (var product in Products)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text">@product.Price</p>
+                    <a href="@($"/product/{@product.ID}")" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        }
+    </div>
+
+}
