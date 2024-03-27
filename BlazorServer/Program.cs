@@ -13,6 +13,7 @@ builder.Services.AddScoped(h => new HttpClient
 builder.Services.AddHttpClient();
 
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();

@@ -37,6 +37,7 @@ namespace TutorNET106_BlazorServer.API.Repos
                 productUpdate.Name = product.Name;
                 productUpdate.Description = product.Description;
                 productUpdate.Price = product.Price;
+                productUpdate.ImagePath = product.ImagePath;
 
                 _dbContext.SaveChanges();
             }

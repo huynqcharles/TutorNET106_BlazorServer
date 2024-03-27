@@ -11,19 +11,23 @@ namespace BlazorServer.Services
             _httpClient = httpClient;
         }
 
-        public void CreateProduct(Product product)
+        public async Task CreateProduct(Product product)
         {
-            throw new NotImplementedException();
+            var response = await _httpClient.PostAsJsonAsync("api/Products", product);
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception(await response.Content.ReadAsStringAsync());
+            }
         }
 
-        public void DeleteProduct(int id)
+        public async Task DeleteProduct(int id)
         {
-            throw new NotImplementedException();
+            await _httpClient.DeleteAsync($"api/Products/id:int?id={id}");
         }
 
-        public void EditProduct(Product product)
+        public async Task EditProduct(Product product)
         {
-            throw new NotImplementedException();
+            await _httpClient.PutAsJsonAsync("api/Products", product);
         }
 
         public async Task<Product> GetProductById(int id)

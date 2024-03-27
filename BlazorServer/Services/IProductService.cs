@@ -6,8 +6,8 @@ namespace BlazorServer.Services
     {
         Task<IEnumerable<Product>> GetProducts();
         Task<Product> GetProductById(int id);
-        void CreateProduct(Product product);
-        void EditProduct(Product product);
-        void DeleteProduct(int id);
+        Task CreateProduct(Product product);
+        Task EditProduct(Product product);
+        Task DeleteProduct(int id);
     }
 }

@@ -12,5 +12,6 @@ namespace TutorNET106_BlazorServer.API.Data
         }
 
         public DbSet<Product> Products { get; set; }
+        public DbSet<FileUpload> FileUploads { get; set; }
     }
 }

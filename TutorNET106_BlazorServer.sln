@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutorNET106_BlazorServer.API", "TutorNET106_BlazorServer.API\TutorNET106_BlazorServer.API.csproj", "{68B49358-1EFA-41FE-AA62-5C30EB49F207}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TutorNET106_BlazorServer.API", "TutorNET106_BlazorServer.API\TutorNET106_BlazorServer.API.csproj", "{68B49358-1EFA-41FE-AA62-5C30EB49F207}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{03373F62-2A61-4B17-89C9-DD5E523609E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shared", "Shared\Shared.csproj", "{03373F62-2A61-4B17-89C9-DD5E523609E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{4F415E1A-B680-44BD-A677-3C50BC2CA48A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorServer", "BlazorServer\BlazorServer.csproj", "{4F415E1A-B680-44BD-A677-3C50BC2CA48A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

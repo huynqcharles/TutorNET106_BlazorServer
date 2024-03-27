@@ -13,7 +13,9 @@ builder.Services.AddDbContext<MyDbContext>(options =>
 });
 
 builder.Services.AddScoped<IProductRepo, ProductRepo>();
+builder.Services.AddScoped<IFileRepo, FileRepo>();
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

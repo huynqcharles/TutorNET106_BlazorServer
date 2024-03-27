@@ -6,12 +6,13 @@
 @if (Product != null)
 {
     <div class="card" style="width: 18rem;">
-        <img src="..." class="card-img-top" alt="...">
+        <img src="@Product.ImagePath" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">Product.Name</h5>
-            <p class="card-text">Product.Description</p>
-            <p class="card-text">Product.Price</p>
-            <a href="#" class="btn btn-success">Edit</a>
+            <h5 class="card-title">@Product.Name</h5>
+            <p class="card-text">@Product.Description</p>
+            <p class="card-text">@Product.Price</p>
+            <a href="@($"/edit-product/{Id}")" class="btn btn-success">Edit</a>
+            <a class="btn btn-danger" @onclick="@DeleteProduct">Delete</a>
         </div>
     </div>
 }

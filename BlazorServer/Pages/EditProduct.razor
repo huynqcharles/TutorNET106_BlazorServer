@@ -1,0 +1,24 @@
+﻿@page "/edit-product/{id}"
+@inherits EditProductBase
+
+<h3>Edit Product</h3>
+
+<EditForm Model="Product" OnValidSubmit="@SubmitForm">
+    <div class="mb-3">
+        <label for="@Product.Name" class="form-label">Name</label>
+        <input type="text" class="form-control" @bind-value="@Product.Name">
+    </div>
+    <div class="mb-3">
+        <label for="@Product.Description" class="form-label">Description</label>
+        <input type="text" class="form-control" @bind-value="@Product.Description">
+    </div>
+    <div class="mb-3">
+        <label for="@Product.Price" class="form-label">Price</label>
+        <input type="text" class="form-control" @bind-value="@Product.Price">
+    </div>
+    <div class="mb-3">
+        <label for="@Product.ImagePath" class="form-label">Image Path</label>
+        <input type="text" class="form-control" @bind-value="@Product.ImagePath">
+    </div>
+    <button class="btn btn-success" type="submit">Save</button>
+</EditForm>
