@@ -20,7 +20,7 @@ namespace BlazorServer.Services
 
             streamContent.Headers.ContentType = new MediaTypeHeaderValue(file.ContentType);
 
-            content.Add(streamContent, file.Name);
+            content.Add(streamContent, "file", file.Name);
 
             var response = await _httpClient.PostAsync("api/Files", content);
 
